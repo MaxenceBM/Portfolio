@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@800&display=swap");
+
+.containerHome {
+  height: 100vh;
+}
+
+.background {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+}
+
+.titleHome {
+  margin: 0;
+  position: relative;
+  z-index: 100;
+  bottom: 4em;
+  font-size: 180px;
+  color: #fff;
+  font-family: "Lexend", sans-serif;
+  animation: appearAnimation 2s ease-in-out;
+  padding-left: 10rem;
+
+  @keyframes appearAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 10;
+      transform: translateY(0);
+    }
+  }
+}
+.imgProfile {
+  z-index: 105;
+  position: absolute;
+  bottom: 18%;
+  left: 65%;
+  transition: transform 0.8s ease;
+  &:hover {
+    transform: translateY(-30px); /* Translation vers le haut au survol */
+  }
+}

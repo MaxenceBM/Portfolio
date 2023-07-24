@@ -1,0 +1,183 @@
+.backgroundFermeBLUM {
+  
+  width: 100%;
+  height: 100%;
+  background-color: #232839;;
+  background-size: 300% 300%;
+  // background-image: linear-gradient(
+  //   -45deg,
+  //   #2bb27d 0%,
+  //   #2bb27d 25%,
+  //   #2bb27d 51%,
+  //   #232839 100%
+  // );
+  -webkit-animation: AnimateBG 20s ease infinite;
+  animation: AnimateBG 20s ease infinite;
+}
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.imgFermeBLUM {
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+  padding-top: 100px;
+}
+
+.imgFermeBLUM img {
+  border-radius: 30px;
+  width: 70rem;
+  transition: transform 0.3s ease;
+}
+.imgFermeBLUM img:hover {
+  transform: scale(1.02);
+}
+
+.technoDeveloppement {
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+
+  .containerDeveloppement {
+    width: 800px;
+    height: 180px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #232839;
+    box-shadow: 3px 3px 4px 6px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+
+    .titreDev {
+      padding-top: 10px;
+      color: #fff;
+      text-align: center;
+      font-family: Roboto Mono;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+}
+.containerDeveloppement:hover {
+  transform: scale(1.02);
+}
+.containerLogo {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  justify-content: space-around;
+}
+
+.logoImg {
+  width: 10%;
+  transition: transform 0.3s ease;
+}
+.logoImg:hover {
+  transform: scale(1.5);
+}
+
+.containerHistoireLiens {
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-around;
+
+  .histoire {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: Roboto Mono;
+    
+      color: #fff;
+    width: 500px;
+    height: 203px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #232839;
+    box-shadow: 3px 3px 4px 6px rgba(0, 0, 0, 0.25);
+  }
+  .histoire h1{
+    padding-top: 10px;
+    font-size: 20px;
+  }
+}
+
+.liens {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .containerGitHub {
+    padding-bottom: 30px;
+    
+    
+    .gitHub {
+      display: flex;
+      align-items: center;
+      font-family: Roboto Mono;
+      color: #fff;
+      width: 500px;
+      height: 50px;
+      flex-shrink: 0;
+      border-radius: 30px;
+      background: #232839;
+      box-shadow: 3px 3px 4px 6px rgba(0, 0, 0, 0.25);
+
+      transition: transform 0.3s ease;
+    }
+    .gitHub:hover{
+      transform: scale(1.02);
+    }
+  }
+  .containerWeb {
+    .siteWeb {
+      display: flex;
+      align-items: center;
+      font-family: Roboto Mono;
+      color: #fff;
+      width: 500px;
+      height: 50px;
+      flex-shrink: 0;
+      border-radius: 30px;
+      background: #232839;
+      box-shadow: 3px 3px 4px 6px rgba(0, 0, 0, 0.25);
+      transition: transform 0.3s ease;
+    }
+    .siteWeb:hover{
+      transform: scale(1.02);
+    }
+  }
+}
+
+.logoLiens {
+  width: 30px;
+  height: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+a {
+  text-decoration: none;
+  
+}
